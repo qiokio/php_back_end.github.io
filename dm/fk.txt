@@ -1,0 +1,15 @@
+//反馈功能代码调用！
+ug(5,"text",zh)
+ug(6,"text",mm)
+ss("id="+zh+"&content="+mm,sja)
+s url="http://cyht.doos.top/fk/api.php"
+ t()
+ {
+ 
+  hs(url,sja,"utf-8",f)
+  syso(f)
+  ufnsui()
+  {
+    tw(f)
+  }
+ }

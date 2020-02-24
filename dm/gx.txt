@@ -1,0 +1,48 @@
+//获取更新代码调用！
+t()
+{
+s banben="1.1"
+//每次更新都要修改和远程版本数字相同侧不提示更新，大或小于侧执行以下代码。
+s a ="http://cyht.doos.top/gx/gxbb.txt"
+//获取远程修改更新连接！
+  hs(a,gx)
+f(gx!=banben)
+{
+  ufnsui()
+  {
+  t()
+ {
+s a ="http://cyht.doos.top/gx/gxry.txt"
+//读取后台更新内容的链接！
+s a1 ="http://cyht.doos.top/gx/gxlj.txt"
+//读取后台新版本下载链接！
+hs(a,ry)
+//变量更新内容！
+hs(a1,sss.a11)
+//全局变量弹出界面读取新版本下载链接！
+//立即更新的单击事件里！
+ufnsui()
+//更新线程执行！
+{
+  utw("","","gx.iyu","",true,sss.gx)
+  //更新弹窗用到，这里的true锁定返回，不许取消！false解锁！
+  {
+  }
+//全局变量弹出更新界面！如上gx.iyu！可全局弹窗显示内容！
+gvs(sss.gx,15,y)
+//全局变量
+us(y,"text",ry)
+//设置控件显示
+}
+}
+  }
+}
+else
+{
+  ufnsui()
+  {
+  tw("暂无更新")
+//删除上面代码则不提示！
+  }
+}
+  }

@@ -1,0 +1,36 @@
+//登陆代码调用
+ug(5,"text",zh)
+//帐号控件
+ug(6,"text",mm)
+//密码控件
+f(zh==""||mm=="")
+{
+  tw("请填写完整")
+}
+else
+{
+t()
+{
+ss("http://cyht.doos.top/api.php",wz)
+ss("user="+zh+"&pass="+mm+"&t=login&",nr)
+hs(wz,nr,"utf-8",post)
+syso(post)
+f(post? "成功")
+{
+ufnsui()
+{
+tw("登录成功")
+//登陆成功跳转的界面！uigo("你的界面")加上这代码！
+end()
+//跳转界面后结束当前界面
+}
+}
+else
+{
+  ufnsui()
+  {
+tw("登陆失败")
+ }
+}
+}
+}

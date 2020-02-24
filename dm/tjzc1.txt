@@ -1,0 +1,28 @@
+//获取注册统计人数代码！
+t()
+{
+  s a="http://www.baidu.com"
+  hs(a,du)
+  f(du==null)
+  //判断访问百度返回数据是否有网络！
+  {
+    ufnsui()
+    {
+      tw("请检查你的网络！")
+    }
+  }
+else
+{
+t()
+{
+  s a="http://cyht.doos.top/tj/tjzc.txt"
+  hs(a,zc)
+  ufnsui()
+  {
+    syso(zc)
+    us(17,"text",zc)
+    //统计显示控件
+  }
+}
+}
+}

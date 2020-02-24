@@ -1,0 +1,23 @@
+//调用api获取QQ头像昵称代码!
+s a="%时空助手/qq.txt"
+//读取qq头像的途径！
+fr(a,qq)
+t()
+{
+s bb="&"
+ss("http://q4.qlogo.cn/g?b=qq"+bb+"nk="+qq+bb+"s=5",wz)
+hd(wz,"$qq获取",true,ok)
+//iApp/ok是保存路径，true是如果存在则覆盖
+f(ok=="0")
+{
+ufnsui()
+{
+  us(v3.73,"src","$qq获取")
+  ss("时空助手/qq.png",路径)
+  tot(v3.73,图片)
+  bfs(图片,路径)
+  call(null,"mjava","图库.更新",路径)
+  ss("已保存至 "+路径,tw)
+}
+}
+}

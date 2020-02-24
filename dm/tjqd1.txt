@@ -1,0 +1,29 @@
+//获取启动人次数代码！
+t()
+{
+  s aa="http://www.baidu.com"
+  hs(aa,du)
+  f(du==null)
+  //判断访问百度返回数据是否有网络！
+  {
+    ufnsui()
+    {
+      tw("请检查你的网络！")
+    }
+  }
+else
+{
+  t()
+ {
+  s a="http://cyht.doos.top/tj/tjqd.txt"
+
+  hs(a,qd)
+  ufnsui()
+  {
+    syso(qd)
+    us(17,"text",qd)
+    //统计显示控件
+  }
+}
+}
+}

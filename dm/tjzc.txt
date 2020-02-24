@@ -1,0 +1,6 @@
+//统计注册软件人数代码！放注册代码里！
+t()
+{
+  s a="http://cyht.doos.top/tj/tjzc.php"
+  hs(a,zc)
+}

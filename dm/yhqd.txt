@@ -1,0 +1,34 @@
+//用户签到调用代码！
+//可以放载入事件或单击时件里！
+s a="%skhl/zh.txt"
+//这个是用户注册时保存本地的帐号！读取帐号签到！
+fr(a,c)
+t()
+{
+ss("http://cyht.doos.top/api.php",wz)
+ss("user="+c+"&t=qd&",nr)
+hs(wz,nr,"utf-8",post)
+syso(post)
+f(post? "成功")
+{
+ufnsui()
+{
+tw("签到成功")
+//截取信息
+sj(post,"签到成功，加","金币",jb)
+ufnsui()
+{
+  us(5,"text",jb)
+  //签到成功显示的控件！
+}
+}
+//截取信息
+}
+else
+{
+  ufnsui()
+  {
+    tw("请勿请复签到！")
+  }
+}
+}

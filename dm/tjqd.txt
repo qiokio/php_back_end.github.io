@@ -1,0 +1,6 @@
+//统计启动软件人数代码！放载入事件或单击事件里！
+t()
+{
+  s a="http://cyht.doos.top/tj/tjqd.php"
+  hs(a,tj)
+}

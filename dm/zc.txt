@@ -1,0 +1,53 @@
+//注册代码调用
+ug(5,"text",zh)
+//注册帐号
+ug(6,"text",nc)
+//注册昵称
+ug(35,"text",mm)
+//注册密码
+ug(37,"text",qq)
+//QQ号用于获取头像
+f(zh==""||nc==""||mm==""||qq=="")
+//判断编辑框
+{
+  tw("请填写完整")
+}
+else
+{
+t()
+{
+ss("http://cyht.doos.top/api.php",wz)
+ss("user="+zh+"&name="+nc+"&pass="+mm+"&qq="+qq+"&t=register&",nr)
+hs(wz,nr,"utf-8",post)
+syso(post)
+f(post? "成功")
+{
+ufnsui()
+//更新线路执行
+{
+   t()
+ {
+  //以下代码是统计注册完成人数，也就是统计注册人数！
+  s aa="http://cyht.doos.top/tj/tjzc.php"
+  hs(aa,zc)
+}
+fw("%时空助手/zh.txt",zh)
+//保存注册帐号在本地！
+fw("%时空助手/mm.txt",mm)
+//保存注册密码在本地！
+fw("%时空助手/qq.txt",qq)
+//保存注册QQ号在本地！
+tw("注册成功")
+//注册成功后可以加跳转界面不加也行看你喜欢！
+}
+}
+else
+{
+ufnsui()
+//判断注册失败更新线程提示！
+{
+  tw(post)
+}
+}
+}
+}

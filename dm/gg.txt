@@ -1,0 +1,11 @@
+//获取公告代码调用！
+t()
+{
+  s a ="http://cyht.doos.top/gx/gg.txt"
+  hs(a,a1)
+  ufnsui()
+  {
+    us(6,"text",a1)
+    //显示公告的控件
+  }
+}
